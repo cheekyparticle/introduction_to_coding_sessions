@@ -24,7 +24,7 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        link.href = 'reveal/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
@@ -8507,15 +8507,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box
+/* This file is a compatability layer.  It allows the usage of flexible box 
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this
+`Modern browsers` comments below).  Browsers that are known to implement this 
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+
+    Internet Explorer 11+ 
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11289,7 +11289,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for
+  /* This injects handle bars (a short, wide = symbol) for 
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11732,7 +11732,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-
+    
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11933,11 +11933,11 @@ a.anchor-link {
 <li>I have set this up using Jupyter Notebooks, binder and github. </li>
 <li>If you're in Sarah's group use the following link</li>
 </ul>
-<p><a href="https://hub.mybinder.org/user/cheekyparticle--coding_sessions-wm78vt51/tree">https://hub.mybinder.org/user/cheekyparticle--coding_sessions-wm78vt51/tree</a></p>
+<p><a href="https://mybinder.org/v2/gh/cheekyparticle/introduction_to_coding_sessions/Group_Sarah">https://mybinder.org/v2/gh/cheekyparticle/introduction_to_coding_sessions/Group_Sarah</a></p>
 <ul>
 <li>If you're in Andrew's group use this link</li>
 </ul>
-<p><a href="https://hub.mybinder.org/user/cheekyparticle--coding_sessions-pb7l591w/tree">https://hub.mybinder.org/user/cheekyparticle--coding_sessions-pb7l591w/tree</a></p>
+<p><a href="https://mybinder.org/v2/gh/cheekyparticle/introduction_to_coding_sessions/Group_Andrew">https://mybinder.org/v2/gh/cheekyparticle/introduction_to_coding_sessions/Group_Andrew</a></p>
 
 </div>
 </div>
@@ -11950,7 +11950,7 @@ a.anchor-link {
 <li>Click on "new" in the top right hand side and select folder.</li>
 <li>Name the folder after your name. </li>
 <li>Now enter the folder and create a new python notebook. </li>
-<li>You should have something that looks like this,
+<li>You should have something that looks like this, 
 <img src="jupyter_look.png" alt="title"></li>
 </ul>
 
@@ -12081,7 +12081,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">rox</span><span class="o">=</span><span class="s2">&quot;Roxanne &quot;</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">rox</span><span class="o">=</span><span class="s2">&quot;Roxanne &quot;</span> 
 <span class="n">hook</span> <span class="o">=</span> <span class="s2">&quot;you don&#39;t have to put on the red light </span><span class="se">\n</span><span class="s2">&quot;</span>
 <span class="k">print</span> <span class="mi">5</span><span class="o">*</span><span class="p">(</span><span class="n">rox</span><span class="o">+</span> <span class="n">hook</span><span class="p">)</span>
 </pre></div>
@@ -12100,11 +12100,11 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Roxanne you don&#39;t have to put on the red light
-Roxanne you don&#39;t have to put on the red light
-Roxanne you don&#39;t have to put on the red light
-Roxanne you don&#39;t have to put on the red light
-Roxanne you don&#39;t have to put on the red light
+<pre>Roxanne you don&#39;t have to put on the red light 
+Roxanne you don&#39;t have to put on the red light 
+Roxanne you don&#39;t have to put on the red light 
+Roxanne you don&#39;t have to put on the red light 
+Roxanne you don&#39;t have to put on the red light 
 
 </pre>
 </div>
@@ -12225,8 +12225,8 @@ Roxanne you don&#39;t have to put on the red light
 <ul>
 <li>Example </li>
 </ul>
-<div class="highlight"><pre><span></span><span class="n">N_odd</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">N_even</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight"><pre><span></span><span class="n">N_odd</span> <span class="o">=</span> <span class="mi">0</span> 
+<span class="n">N_even</span> <span class="o">=</span> <span class="mi">0</span> 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="o">-</span><span class="mi">14</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">i</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">N_even</span><span class="o">+=</span><span class="mi">1</span>
@@ -12393,13 +12393,13 @@ Roxanne you don&#39;t have to put on the red light
 <h1 id="Making-a-dictionary-again!">Making a dictionary again!<a class="anchor-link" href="#Making-a-dictionary-again!">&#182;</a></h1><ul>
 <li>Write a code to read the data file and make it into a dictionary again. </li>
 <li>You may want to some of the following operations. </li>
-<li>Slicing: it's like calling an entry in a list, but you pick values for i to j. <div class="highlight"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span>
+<li>Slicing: it's like calling an entry in a list, but you pick values for i to j. <div class="highlight"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span> 
 <span class="k">print</span> <span class="n">word</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">el</span>
 </pre></div>
 </li>
 <li><p>strip: a method for removing characters on both ends of the string.</p>
-<div class="highlight"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span>
+<div class="highlight"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span> 
 <span class="k">print</span> <span class="n">word</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;d&quot;</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">Hello</span> <span class="n">Worl</span>
 </pre></div>
@@ -12407,7 +12407,7 @@ Roxanne you don&#39;t have to put on the red light
 <li><p>splt: a method for splitting a string into a list, seperated by a chosen character or string.</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span>
+<div class="highlight"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span> 
 <span class="k">print</span> <span class="n">word</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="s1">&#39;World&#39;</span><span class="p">]</span>
 </pre></div>
